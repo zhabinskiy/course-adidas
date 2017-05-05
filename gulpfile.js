@@ -3,6 +3,7 @@
 const gulp = require('gulp'),
       sass = require('gulp-sass'),
       include = require('gulp-html-tag-include'),
+      imagemin = require('gulp-imagemin'),
       babel = require('gulp-babel'),
       concat = require('gulp-concat'),
       uglify = require('gulp-uglify'),
@@ -12,22 +13,22 @@ const gulp = require('gulp'),
       reload = browserSync.reload;
 
 const paths = {
-  styles: 'sources/styles/',
+  styles: 'src/styles/',
   css: 'dist/css/',
-  scripts: 'sources/scripts/',
+  scripts: 'src/scripts/',
   js: 'dist/js/',
-  templates: 'sources/templates/',
+  templates: 'src/templates/',
   html: 'dist/',
 };
 
 // Одноразовая сборка проекта
 gulp.task('default', function() {
-  gulp.start('templates', 'styles', 'scripts');
+  gulp.start('templates', 'styles', 'images', 'scripts');
 });
 
 // Запуск живой сборки
 gulp.task('live', function() {
-  gulp.start('templates', 'styles', 'scripts', 'watch', 'server');
+  gulp.start('templates', 'styles', 'images', 'scripts', 'watch', 'server');
 });
 
 // Следим за изменениями файлов
@@ -35,6 +36,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.templates + '**/*.html', ['templates']);
   gulp.watch(paths.styles + '**/*.scss', ['styles']);
   gulp.watch(paths.scripts + '*.js', ['scripts']);
+  gulp.watch(paths.images + '/**/*.{png,jpg,gif,svg}', ['images']);
 });
 
 // Собираем HTML
@@ -55,6 +57,13 @@ gulp.task('styles', function() {
     }).on('error', onError))
     .pipe(gulp.dest(paths.css))
     .pipe(reload({stream: true}));
+});
+
+// Оптимизируем картинки
+gulp.task('images', function() {
+  return gulp.src(paths.images + '/**/*.{png,jpg,gif,svg}')
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.img));
 });
 
 // Собираем JS
