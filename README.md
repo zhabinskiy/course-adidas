@@ -1,11 +1,11 @@
 # Frontend Course. 2
 
-Сборка проекта
+Сборка проекта:
 ```bash
 npm build
 ```
 
-Живая сборка проекта
+Живая сборка проекта""
 ```bash
-npm run live
+npm start
 ```
