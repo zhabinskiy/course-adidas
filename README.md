@@ -7,5 +7,5 @@ npm build
 
 Живая сборка проекта
 ```bash
-npm live
+npm run live
 ```
