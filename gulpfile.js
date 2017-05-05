@@ -21,7 +21,7 @@ const paths = {
 };
 
 // Одноразовая сборка проекта
-gulp.task('build', function() {
+gulp.task('default', function() {
   gulp.start('templates', 'styles', 'scripts');
 });
 

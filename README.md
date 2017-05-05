@@ -2,10 +2,10 @@
 
 Сборка проекта
 ```bash
-gulp build
+npm build
 ```
 
 Живая сборка проекта
 ```bash
-gulp live
+npm live
 ```

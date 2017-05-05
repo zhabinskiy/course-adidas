@@ -3,10 +3,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zzzhabinskiy/course-adidas.git"
+    "url": "git+https://github.com/zhabinskiy/course-adidas.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./node_modules/gulp/bin/gulp.js",
+    "live": "node ./node_modules/gulp/bin/gulp.js live"
   },
   "author": "Konstantin Zhabinskiy",
   "license": "ISC",
