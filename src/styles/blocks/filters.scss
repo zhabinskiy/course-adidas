@@ -1,0 +1,62 @@
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  .filters-img {
+    width: 55px;
+    height: 55px;
+    background: #ebebeb url('../img/filter@2x.png') 50% 50% no-repeat;
+    background-size: 40px 33px;
+  }
+
+  .filters-gender {
+    margin-left: 29px;
+
+    button {
+      margin-right: 12px;
+    }
+
+  }
+
+  .filters-size {
+    margin-left: 72px;
+
+    .size-title {
+      color: #4d42f8;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: "Avenir Next", Arial, sans-serif;
+      text-transform: uppercase;
+      margin-right: 12px;
+    }
+
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: #d6d6d6;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Avenir Next", Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: .2s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #4d42f8;
+    }
+
+  }
+
+  .button-active {
+    color: #4d42f8;
+  }
+
+}

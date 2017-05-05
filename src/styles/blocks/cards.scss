@@ -1,0 +1,54 @@
+.cards {
+  margin-left: -12px;
+  margin-right: -12px;
+
+  .cards-item {
+    display: flex;
+    flex-direction: column;
+    width: 311px;
+    height: 311px;
+    margin: 8px 12px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Avenir Next", Arial, sans-serif;
+    text-transform: uppercase;
+    background: #f4f4f4;
+
+    span {
+      position: relative;
+      width: 76px;
+      font-size: 14px;
+      padding: 6px 0;
+      text-align: center;
+      background: #ff5c5c;
+      left: 208px;
+      bottom: 187px;
+      z-index: 1;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      bottom: 22px;
+      text-align: center;
+      color: #fff;
+      background-image: linear-gradient(107deg, #0c09bf, #966dd8);
+      font-size: 30px;
+      text-decoration: none;
+      padding: 24px 0;
+    }
+
+  }
+
+  .cards-item-normal {
+
+    a {
+      color: #0d0d0d;
+      background: #fff;
+      bottom: -10px;
+    }
+
+  }
+
+}
