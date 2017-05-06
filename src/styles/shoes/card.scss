@@ -130,6 +130,12 @@
       font-family: "Avenir Next", Arial, sans-serif;
       font-weight: 500;
       color: #c0c0c0;
+      transition: .2s;
+
+      &:hover {
+        color: #6e6e6e;
+      }
+
     }
 
   }
@@ -167,4 +173,11 @@
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to left, #4949aa, #27275d);
+  }
+
 }
