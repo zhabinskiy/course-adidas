@@ -2,6 +2,10 @@
   margin-left: -12px;
   margin-right: -12px;
 
+  .col-lg-4, .col-md-8, .col-sm-12 {
+    padding: 0;
+  }
+
   .cards-item {
     display: flex;
     flex-direction: column;
