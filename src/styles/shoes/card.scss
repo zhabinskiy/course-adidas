@@ -1,0 +1,170 @@
+.card-main {
+
+  button {
+    outline: none;
+    cursor: pointer;
+  }
+
+  .card-title {
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      color: #3a3a3a;
+      font-size: 64px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    button {
+      background: #e3e3e3;
+      border: none;
+      border-radius: 100%;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: "Avenir Next", Arial, sans-serif;
+      text-transform: uppercase;
+      padding: 24px 14px 24px 14px;
+      transition: .2s;
+
+      &:hover {
+        transform: scale(1.1);
+        background: #d0caca;
+      }
+
+    }
+
+  }
+
+  .card-details {
+    margin-top: 6px;
+    position: relative;
+    z-index: 1;
+
+    .card-colors {
+      display: inline-block;
+      position: relative;
+      top: 4px;
+      margin-right: 20px;
+
+      .btn-color {
+        width: 18px;
+        height: 18px;
+        border: none;
+        border-radius: 100%;
+        margin: 0 3px;
+        transition: .2s;
+
+        &:hover {
+          position: relative;
+          transform: scale(1.2);
+        }
+
+      }
+
+      .btn-color-gray {
+        background: #c5c5c5;
+      }
+
+      .btn-color-blue {
+        background: #4d87ca;
+      }
+
+      .btn-color-black {
+        background: #4a4a4a;
+      }
+
+      .btn-color-silver {
+        background: #e0e0e0;
+      }
+
+    }
+
+  }
+
+  .card-price {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+
+    h2 {
+      font-size: 80px;
+      color: #e2e2e2;
+    }
+
+  }
+
+  .card-big-photo {
+    position: relative;
+    bottom: 170px;
+    z-index: 0;
+
+    img {
+      width: 85%;
+    }
+
+  }
+
+  .card-images-preview {
+    position: relative;
+    bottom: 190px;
+    z-index: 1;
+
+    .card-images-line {
+      width: 100%;
+      height: 3px;
+      background-color: #e7e7e7;
+      border-radius: 1.5px;
+      margin: 3px 0;
+    }
+
+    button {
+      background: none;
+      border: none;
+      text-align: left;
+      position: relative;
+      bottom: 5px;
+      font-size: 14px;
+      font-family: "Avenir Next", Arial, sans-serif;
+      font-weight: 500;
+      color: #c0c0c0;
+    }
+
+  }
+
+  .card-description {
+    position: relative;
+    bottom: 160px;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 50px;
+    color: #d8d8d8;
+
+    span {
+      color: #6e6e6e;
+    }
+
+  }
+
+}
+
+.buy-button {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  padding: 37px 0 34px 414px;
+  width: 100%;
+  background-image: linear-gradient(to right, #4949aa, #27275d);
+  border: 0;
+  text-align: center;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}

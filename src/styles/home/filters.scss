@@ -1,8 +1,10 @@
 .filters {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
+  padding-bottom: 11px;
   padding-left: 23px;
+  border-bottom: 3px solid rgba(#e7e7e7, 0.56);
 
   .filters-img {
     width: 55px;
@@ -21,7 +23,7 @@
   }
 
   .filters-size {
-    margin-left: 72px;
+    margin-left: 50px;
 
     .size-title {
       color: #4d42f8;

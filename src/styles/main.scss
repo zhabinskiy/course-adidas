@@ -1,6 +1,7 @@
 @import 'flexboxgrid';
 @import 'default';
-@import 'blocks/sidebar';
-@import 'blocks/content';
-@import 'blocks/filters';
-@import 'blocks/cards';
+@import 'home/sidebar';
+@import 'home/content';
+@import 'home/filters';
+@import 'home/cards';
+@import 'shoes/card';
