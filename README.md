@@ -1,5 +1,10 @@
 # Frontend Course. 2
 
+Перед началом работы устанавливаем зависимости:
+```bash
+npm install
+```
+
 Сборка проекта:
 ```bash
 npm build
