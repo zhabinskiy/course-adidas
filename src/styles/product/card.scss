@@ -7,6 +7,7 @@
 
   .card-title {
     position: relative;
+    max-width: 400px;
     z-index: 1;
 
     h1 {
@@ -39,8 +40,9 @@
   }
 
   .card-details {
-    margin-top: 6px;
-    position: relative;
+    top: 6px;
+    right: 32px;
+    position: absolute;
     z-index: 1;
 
     .card-colors {
@@ -110,7 +112,21 @@
   .card-images-preview {
     position: relative;
     bottom: 190px;
+    width: 100%;
     z-index: 1;
+    display: flex;
+    align-items: center;
+
+    .card-images {
+      display: inline-block;
+    }
+
+    .card-images-lines {
+      display: inline-block;
+      width: 15%;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
 
     .card-images-line {
       width: 100%;
