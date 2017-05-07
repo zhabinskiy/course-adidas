@@ -9,3 +9,12 @@
 .content-shoes {
   padding: 26px 34px 0 34px;
 }
+
+@media screen and (max-width: 414px) {
+
+  .content {
+    margin-left: 0;
+    padding-top: 64px;
+  }
+
+}

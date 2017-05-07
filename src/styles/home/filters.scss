@@ -63,3 +63,26 @@
   }
 
 }
+
+@media screen and (max-width: 414px) {
+
+  .filters {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 0 15px 15px;
+
+    .filters-img {
+      display: none;
+    }
+
+    .filters-gender {
+      margin-left: 0;
+    }
+
+    .filters-size {
+      margin-left: 0;
+    }
+
+  }
+
+}

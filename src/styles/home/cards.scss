@@ -1,7 +1,6 @@
 .cards {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
   padding-left: 15px;
+  padding-right: 15px;
 
   .cards-item {
     padding: 10px;
@@ -16,7 +15,7 @@
 
     .badge {
       position: absolute;
-      left: 14.2rem;
+      right: 1.3rem;
       top: 1.3rem;
     }
 
@@ -42,7 +41,6 @@
     a {
       color: #0d0d0d;
       background: #fff;
-      // bottom: -10px;
     }
 
   }
@@ -60,4 +58,13 @@
   padding: 6px 0;
   text-align: center;
   background: #ff5c5c;
+}
+
+@media screen and (max-width: 414px) {
+
+  .cards {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 }
