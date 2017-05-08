@@ -40,7 +40,7 @@
   }
 
   .card-details {
-    top: 6px;
+    top: 30px;
     right: 32px;
     position: absolute;
     z-index: 1;
@@ -194,6 +194,45 @@
 
   &:hover {
     background-image: linear-gradient(to left, #4949aa, #27275d);
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+
+  .card-main {
+
+    .card-title {
+      width: 100%;
+      margin-top: 36px;
+
+      h1 {
+        font-size: 36px;
+      }
+
+      button {
+        display: none;
+      }
+
+    }
+
+    .card-details {
+      position: static;
+      display: flex;
+      height: 32px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      .card-colors {
+        margin-right: 0;
+      }
+
+    }
+
+    .card-big-photo, .card-images-preview, .card-price {
+      display: none;
+    }
+
   }
 
 }

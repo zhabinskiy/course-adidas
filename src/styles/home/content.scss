@@ -10,11 +10,16 @@
   padding: 26px 34px 0 34px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 760px) {
 
-  .content {
+  .content, .content-shoes {
     margin-left: 0;
     padding-top: 64px;
+  }
+
+  .content-shoes {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
 }
